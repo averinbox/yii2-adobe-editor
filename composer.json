@@ -1,0 +1,27 @@
+{
+    "name": "averinbox/yii2-adobe-editor",
+    "description": "Редактор фотографий для сайта от Adobe",
+    "type": "library",
+    "keywords": ["yii2","extension"," image-editor"," adobe-image-editor"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrey Averin",
+            "email": "averinbox@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "repositories":[
+        {
+            "type": "git",
+            "url": "https://github.com/averinbox/yii2-adobe-editor.git"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "averinbox\\adobeeditor\\": "src"
+        }
+    }
+}
