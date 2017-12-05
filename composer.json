@@ -1,6 +1,6 @@
 {
     "name": "averinbox/yii2-adobe-editor",
-    "description": "Редактор фотографий для сайта от Adobe",
+    "description": "Image Editor from Adobe",
     "type": "library",
     "keywords": ["yii2","extension"," image-editor"," adobe-image-editor"],
     "license": "MIT",
