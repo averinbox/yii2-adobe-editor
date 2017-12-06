@@ -10,7 +10,6 @@
             "email": "averinbox@gmail.com"
         }
     ],
-    "version": "v1.1.0",
     "require": {
         "yiisoft/yii2": "~2.0.5"
     },
