@@ -111,7 +111,7 @@ class AdobeImageEditor extends InputWidget
     {
         $params = $this->generateJsParams();
         $deleteUrl = $this->options['deleteUrl'];
-        $model = \yii\helpers\Json::encode(['model_name' => $this->model::className(), 'model_id' => $this->model->id]);
+        $model = \yii\helpers\Json::encode(['model_name' => $this->model::className(), 'model_id' => (empty($this->model->id) ? '' : $this->model->id)]);
 
         $js = new JsExpression("
             var csdkImageEditor = new Aviary.Feather($params);
