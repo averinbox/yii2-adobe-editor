@@ -69,10 +69,10 @@ class AdobeImageEditor extends InputWidget
 //
 //        }
 
+        $attribute = $this->attribute;
         echo Html::activeFileInput($this->model, $this->attribute, ['id' => $this->field->labelOptions['for'], 'class' => 'adb-file-input']);
-        echo Html::img((empty($this->model->logo_fullpath) ? '/img/icon_img.png' : $this->model->logo_fullpath), ['class' => 'adb-image', 'id' => $this->_id]) .
-            Html::tag('a','Удалить', ['href' => '#', 'class' => 'adb-delete-btn', 'style' => (!empty($this->model->logo_fullpath) ? 'visibility: visible;' : 'visibility: hidden;'), 'id' => 'delete_' . $this->_id]);
-
+        echo Html::img((empty($this->model->$attribute) ? '/img/icon_img.png' : $this->model->$attribute), ['class' => 'adb-image', 'id' => $this->_id]) .
+            Html::tag('a','Удалить', ['href' => '#', 'class' => 'adb-delete-btn', 'style' => (!empty($this->model->$attribute) ? 'visibility: visible;' : 'visibility: hidden;'), 'id' => 'delete_' . $this->_id]);
 
     }
 
